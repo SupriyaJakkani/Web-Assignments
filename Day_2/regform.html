@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFusion 2024</title>
+</head>
+<body>
+<h1>TechFusion 2024</h1>
+
+<form id="registrationForm" action="/submit_registration" method="post">
+  <!-- Personal Details -->
+  <fieldset>
+    <legend>Personal Details</legend>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required><br><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" pattern="[0-9]+" required><br><br>
+  </fieldset>
+
+  <!-- Profile Type -->
+  <fieldset>
+    <legend>Profile Type</legend>
+    <label><input type="radio" name="profileType" value="Professional" required> Professional</label><br>
+    <label><input type="radio" name="profileType" value="Student"> Student</label><br>
+    <label><input type="radio" name="profileType" value="Enthusiast"> Enthusiast</label><br><br>
+  </fieldset>
+
+  <!-- Areas of Interest -->
+  <fieldset>
+    <legend>Areas of Interest</legend>
+    <label for="interest">Primary Domain of Interest:</label>
+    <select id="interest" name="interest" required>
+      <option value="">Select an option</option>
+      <option value="Web Development">Web Development</option>
+      <option value="Data Science">Data Science</option>
+      <option value="Cloud Computing">Cloud Computing</option>
+      <option value="Artificial Intelligence">Artificial Intelligence</option>
+      <option value="Cybersecurity">Cybersecurity</option>
+    </select><br><br>
+  </fieldset>
+
+  <!-- Workshops -->
+  <fieldset>
+    <legend>Workshops</legend>
+    <label><input type="checkbox" name="workshops" value="Intro to Quantum Computing"> Intro to Quantum Computing</label><br>
+    <label><input type="checkbox" name="workshops" value="Virtual Reality on the Web"> Virtual Reality on the Web</label><br>
+    <label><input type="checkbox" name="workshops" value="Cybersecurity 101"> Cybersecurity 101</label><br>
+    <label><input type="checkbox" name="workshops" value="AI in Medical Imaging"> AI in Medical Imaging</label><br><br>
+  </fieldset>
+
+  <!-- Additional Information -->
+  <fieldset>
+    <legend>Additional Information</legend>
+    <label for="additionalInfo">Any additional information or specific requirements:</label><br>
+    <textarea id="additionalInfo" name="additionalInfo" maxlength="300"></textarea><br><br>
+  </fieldset>
+
+  <!-- Preferred Days -->
+  <fieldset>
+    <legend>Preferred Days</legend>
+    <label><input type="checkbox" name="days" value="Day 1"> Day 1</label><br>
+    <label><input type="checkbox" name="days" value="Day 2"> Day 2</label><br>
+    <label><input type="checkbox" name="days" value="Day 3"> Day 3</label><br><br>
+  </fieldset>
+
+  <!-- Meal Preference -->
+  <fieldset>
+    <legend>Meal Preference</legend>
+    <label><input type="radio" name="mealPreference" value="Vegetarian" required> Vegetarian</label><br>
+    <label><input type="radio" name="mealPreference" value="Non-Vegetarian"> Non-Vegetarian</label><br>
+    <label><input type="radio" name="mealPreference" value="Vegan"> Vegan</label><br>
+    <label><input type="radio" name="mealPreference" value="No Preference"> No Preference</label><br><br>
+  </fieldset>
+
+  <!-- Terms & Conditions -->
+  <fieldset>
+    <label><input type="checkbox" name="terms" required> I agree to the terms and conditions</label><br><br>
+  </fieldset>
+
+  <!-- Submit Button -->
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
